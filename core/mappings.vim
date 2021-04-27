@@ -1,5 +1,20 @@
 "{ Custom key mappings
 
+"hate esc
+:imap jk <Esc>
+
+" When completion menu is shown, use <cr> to select an item and do not add an
+" annoying newline. Otherwise, <enter> is what it is. For more info , see
+" https://superuser.com/a/941082/736190 and
+" https://unix.stackexchange.com/q/162528/221410
+inoremap <expr> <cr> ((pumvisible())?("\<C-Y>"):("\<cr>"))
+" Use <esc> to close auto-completion menu
+inoremap <expr> <esc> ((pumvisible())?("\<C-e>"):("\<esc>"))
+
+" Tab-complete, see https://vi.stackexchange.com/q/19675/15292.
+inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+
 " Paste non-linewise text above or below current cursor,
 " see https://stackoverflow.com/a/1346777/6064933
 nnoremap <leader>p m`o<ESC>p``
@@ -35,7 +50,7 @@ nnoremap 0 g0
 xnoremap $ g_
 
 " Jump to matching pairs easily in normal mode
-nnoremap <Tab> %
+" nnoremap <Tab> %
 
 " Go to start or end of line easier
 nnoremap H ^

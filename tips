@@ -1,2 +1,20 @@
 leader f for search
 f for find
+gcc to comment and gc to comment visual
+:MarkdownPreview
+:MarkdownPreviewStop
+jk kj instead of espace
+faster saving ctrl s and quit ctrl Q
+gb and gB for buffers
+ctrl j for snippet and ctrl k
+number + j to jump
+leader P and p to paste
+quick: quit, save .. with leader plus key
+\d to close buffer
+Y yank for curser to end of line
+0 begninng of line and $ to end
+tab jump to matching pair
+H and L to start and end of line
+/ to search
+<> to indent
+leader space to remove whitespaces

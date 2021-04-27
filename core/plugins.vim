@@ -340,6 +340,7 @@ let g:neoformat_enabled_c = ['clangformat']
 
 "{{ Git-related
 
+
 """""""""""""""""""""""""vim-fugitive settings""""""""""""""""""""""""""""""
 nnoremap <silent> <leader>gc :Git commit<CR>
 nnoremap <silent> <leader>gs :Git<CR>
