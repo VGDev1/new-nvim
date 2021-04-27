@@ -339,12 +339,6 @@ let g:neoformat_enabled_c = ['clangformat']
 "}}
 
 "{{ Git-related
-"""""""""""""""""""""""""vim-signify settings""""""""""""""""""""""""""""""
-" The VCS to use
-let g:signify_vcs_list = [ 'git' ]
-
-" Change the sign for certain operations
-let g:signify_sign_change = '~'
 
 """""""""""""""""""""""""vim-fugitive settings""""""""""""""""""""""""""""""
 nnoremap <silent> <leader>gc :Git commit<CR>
