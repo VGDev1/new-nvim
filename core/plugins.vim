@@ -41,6 +41,7 @@ endif
 " Super fast movement with vim-sneak
 Plug 'justinmk/vim-sneak'
 
+Plug 'preservim/nerdtree'
 " Clear highlight search automatically for you
 Plug 'romainl/vim-cool'
 
@@ -263,6 +264,8 @@ let g:Lf_WildIgnore = {
   \ '*.wmv', '*.mkv', '*.mp4', '*.rmvb', '*.ttf', '*.ttc', '*.otf',
   \ '*.mp3', '*.aac']
   \}
+
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Only fuzzy-search files names
 let g:Lf_DefaultMode = 'NameOnly'
